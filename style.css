@@ -1,68 +1,117 @@
 body{
-    background-color: #ce7e7e;
-    width: 1366PX;
-    height: 768px;
+    background: rgb(250,93,93);
+    background: radial-gradient(circle, rgba(250,93,93,1) 0%, rgb(24, 24, 24) 100%);
+    width: auto;
+    height: auto;
 }
-
-
-.calculadora{
+.main{
     background-color: #2D2A37;
     width: 356px;
     height: 566px;
     position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+.resultado{
+    display: flex;
+    width: 288px;
+    height: 50px;
     border-radius: 10px;
+    gap: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50.4px;
+    letter-spacing: -2%;
+    color: #EBEBEB;
+    width: 248px;
+    height: 50px;
+    gap: 0px;
+    opacity: 0px;
+    justify-content: space-between;
+
+
 }
 
-.resultado{
-    color: #6B6B6B;
-    display: flex;
-    text-align: right;
-    padding-left: 270px;
-    padding-top: 26px;
+button{
+    border-radius: 20px;
+    height: 64px;
+    width: 64px;
+    cursor: pointer;
+    border: none;
     font-family: "Rubik";
-    font-size: 20px;
-    line-height: 1px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.44px;
+    letter-spacing: -2%;
+    align-self: center;
+}
+
+.teclado{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr); /* 4 linhas com altura igual */
+    grid-template-columns: repeat(4, 1fr); /* 5 colunas com largura igual */
+    gap: 14px; /* Espaçamento entre as células */
+    padding: 30px;
+    align-items: center;
+    align-self: center;
+    width: 292px;
+    height: 368px;
+    
+    
 }
 
 .display{
-    text-align: right;
+    
+    align-self: center;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: #6B6B6B;
+    justify-content: end;
+    padding: 0px, 22px, 0px, 18px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 54px;
     font-family: "Rubik";
-    font-size: 36px
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -2%;
+    justify-content: right;
+    
+    gap: 0px;
+    opacity: 0px;
+    color: #6B6B6B;
+
 }
 
-#p{
-    padding-left: 40px;
+#a{
+    color: #fd4242;
+    font-weight: 100;
 }
 
-#dois{
-    padding-right: 40px;
-}
-
-.ce{
-    height:64px;
-    width: 64px;
-}
-.teclado{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas com largura igual */
-    grid-template-rows: repeat(5, 64px);   /* 5 linhas com altura de 100 pixels */
-    gap: 10px;  /* Espaçamento entre as células */
-    color: #2D2A37;
-    padding: 10px;
-    padding-left: 10px;
-}
-
-.ce{
+button{
+    color:#fd4242;
     background-color: #2D2A37;
-    border: none;
+    background: linear-gradient(0deg, #2D2A37, #6b6777),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 0px 2px 3px 0px #FFFFFF0F inset;
+
+    box-shadow: 0px 0px 2px 0px #0000004A;
+
+    box-shadow: 0px 2px 4px 0px #00000042;
+
+    box-shadow: 0px 4px 6px 0px #0000001A;
+
+    box-shadow: 0px 7px 7px 0px #0000000A;
+
+    box-shadow: 0px 11px 7px 0px #00000003;
 }
 
-h1{
-    font-family: "Roboto Condensed";
-    font-size: 64px bold;
-    color: #fff;
-}
+
+
+button:hover{
+    background: linear-gradient(0deg, #373838 20%, #FA5D5D 100%);
+    box-shadow: 0px 5px 10px  #FA5D5D ;
+    color: #ffffff;
+    
+    transition: all 300ms ease-out;
+   }
