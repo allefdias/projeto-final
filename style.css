@@ -16,7 +16,6 @@ body{
     width: 288px;
     height: 50px;
     border-radius: 10px;
-    gap: 200px;
     margin-left: auto;
     margin-right: auto;
     font-family: "Rubik";
@@ -24,13 +23,13 @@ body{
     font-size: 36px;
     line-height: 50.4px;
     letter-spacing: -2%;
-    color: #EBEBEB;
-    width: 248px;
+    color: #bbbbbb;
+    width: 250px;
     height: 50px;
-    gap: 0px;
     opacity: 0px;
     justify-content: space-between;
-
+    border-top: 1px solid #fd4242;
+    border-bottom:1px solid #fd4242;
 
 }
 
@@ -46,6 +45,7 @@ button{
     line-height: 28.44px;
     letter-spacing: -2%;
     align-self: center;
+    border-bottom:1px solid #fd4242;
 }
 
 .teclado{
@@ -59,7 +59,6 @@ button{
     width: 292px;
     height: 368px;
     
-    
 }
 
 .display{
@@ -67,19 +66,20 @@ button{
     align-self: center;
     display: flex;
     justify-content: end;
-    padding: 0px, 22px, 0px, 18px;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 54px;
+    margin-right: 75px;
+    margin-left: 75px;
+    margin-top: 40px;
+    padding: 3px;
     font-family: "Rubik";
     font-weight: 400;
     font-size: 20px;
     letter-spacing: -2%;
     justify-content: right;
+    color: #bbbbbb;
+    border-bottom:1px solid #fd4242;
+    border-top:1px solid #fd4242;
+    border-radius: 10px;
     
-    gap: 0px;
-    opacity: 0px;
-    color: #6B6B6B;
 
 }
 
@@ -111,7 +111,20 @@ button{
 button:hover{
     background: linear-gradient(0deg, #373838 20%, #FA5D5D 100%);
     box-shadow: 0px 5px 10px  #FA5D5D ;
-    color: #ffffff;
-    
+    color: #bbbbbb;
+    border-bottom:1px solid #ff0000;
     transition: all 300ms ease-out;
+    font-size: 30px;
    }
+
+
+hr{
+   
+    border-color: #fd4242;
+    width: 100px;
+    
+}
+
+.disp{
+    margin-right: 3px;
+}
